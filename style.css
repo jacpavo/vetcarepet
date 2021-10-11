@@ -1,0 +1,52 @@
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+nav.logo{
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5rem;
+}
+header{
+    background-color: white;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav li{
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 2px 18px;
+    border-radius: 10px;
+}
+section{
+    border: solid;
+    padding: 100px;
+    margin: 5px;
+    background-image: linear-gradient( orange, white);
+}
+img{
+    display: none;
+    margin: auto;
+    height: 25rem;
+}
+article>
+h1{
+    font-size: 50px;
+    line-height: normal;
+    text-align: center;
+    display: none;
+}
