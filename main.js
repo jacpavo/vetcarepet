@@ -52,7 +52,7 @@ console.log(typeof animalJSON);
 
 // AJAX
 
-const url = "https://gist.github.com/borlaym/585e2e09dd6abd9b0d0a#file-animals-json"
+const url = "https://github.com/jacpavo/vetcarepet/blob/master/animales.json"
 
 $('#btn1').click(()=>{
 
