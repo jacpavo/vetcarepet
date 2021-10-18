@@ -1,19 +1,25 @@
 // Boton Guardar
 function save() {
-    var name = document.getElementById("name").value;
-    var age = document.getElementById("age").value;
-    var race = document.getElementById("race").value;
-    var family = document.getElementById("family").value;
+    function PacienteX(name,age,race,family){
+        this.name=name;
+        this.age=age;
+        this.race=race;
+        this.family=family;
+    }
+    var nameSave = document.getElementById("name").value;
+    var ageSave = document.getElementById("age").value;
+    var raceSave = document.getElementById("race").value;
+    var familySave = document.getElementById("family").value;
     
-    nuevoPaciente = new Paciente(name,age,race,family)
+    nuevoPaciente = new PacienteX(nameSave,ageSave,raceSave,familySave);
     console.log(nuevoPaciente);
     agregar();
 }
 var baseDatos=[];
 function agregar(){
-    baseDatos.push(nuenoPaciente);
+    baseDatos.push(nuevoPaciente);
     console.log(baseDatos);
-    document.getElementById("tabla").innerHTML += "<tbody><td>"+nuevoPaciente.name+"</td><td>"+nuevoPaciente.age+"</td><td>"+nuevoPaciente.race+"</td><td>"+nuevoPaciente.family+"</td></tbody>";
+    document.getElementById("tabla").innerHTML += '<tbody><td>'+nuevoPaciente.name+'</td><td>'+nuevoPaciente.age+'</td><td>'+nuevoPaciente.race+'</td><td>'+nuevoPaciente.family+'</td></tbody>';
 };
 // Objeto
 class Paciente {
