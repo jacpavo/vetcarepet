@@ -58,7 +58,7 @@ console.log(typeof animalJSON);
 
 // AJAX
 
-const url = "https://github.com/jacpavo/vetcarepet/blob/master/animales.json"
+const url = "http://127.0.0.1:5500/Proyecto%2003/animales.json"
 
 $('#btn1').click(()=>{
 
@@ -69,69 +69,3 @@ $('#btn1').click(()=>{
 });
 
 
-
-
-
-/* Boton Guardar
-var nombrePaciente = document.getElementById('name').value = "Nombre";
-var edadPaciente = document.getElementById('age').value = 0;
-var razaPaciente = document.getElementById('race').value = "Raza";
-var familiaPaciente = document.getElementById('family').value = "Familia";
-
-
-let guardarPaciente = nombrePaciente + edadPaciente + razaPaciente + familiaPaciente;
-
-let guardar = document.getElementById("btnsave");
-
-guardar.addEventListener("click", PacienteGuardado);
-
-
-function PacienteGuardado() {
-    guardarPaciente += 1;
-    console.log ("Paciente Guardado" + guardarPaciente);
-}
-
-//Funcion crear paciente
-function crearPaciente() {
-    let nombre = prompt("Ingresa Nombre");
-    let edad = parseInt(prompt("Ingresa Edad"));
-    let raza = prompt("Ingresa Raza");
-    let familia = prompt ("Ingresa familia");
-    paciente.push(new Paciente(nombre, edad, raza, familia));
-}
-
-//Funciones
-function comenzar() {
-    window.onload = () => cargarPaciente();
-}
-
-//Constructor
-function Paciente (nombre, edad, raza, familia) {
-    this.nombre = nombre;
-    this.edad = edad;
-    this.raza = raza;
-    this.familia = familia;
-}
-
-//Cargar Paciente
-function cargarPaciente() {
-    let op = 0;
-    paciente.forEach(paciente =>{
-        const nuevoPaciente = document.creatElement("opcion");
-        nuevoPaciente.setAtribute('value', `${op}`)
-        nuevoPaciente.innerText = `${paciente.nombre}`;
-        seleccionPaciente.appendChild(nuevoPaciente);
-        op += 1; 
-    })         
-}
-
-
-// Ficha Paciente
-const llenarFichaPaciente = () => {
-    selector = seleccionPaciente.value;
-    nombrePaciente.innerText = `Nombre: ${paciente[selector].nombre}`;
-    edadPaciente.innerText = `Edad: ${paciente[selector].edad}`;
-    razaPaciente.innerText = `Raza: ${paciente[selector].raza}`;
-    familiaPaciente.innerText = `Familia: ${paciente[selector].familia}`;
-}
-*/
